@@ -1,0 +1,28 @@
+---
+import "@fontsource-variable/onest";
+
+import { NavbarComponent } from "../components/Navbar";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <NavbarComponent client:load />
+
+    <main class="p-4">
+      <slot />
+    </main>
+
+    <style is:global>
+      :root {
+        font-family: "Onest Variable", sans-serif;
+        scroll-behavior: smooth;
+      }
+    </style>
+  </body>
+</html>
