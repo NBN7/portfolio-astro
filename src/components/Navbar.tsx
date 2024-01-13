@@ -42,7 +42,7 @@ export const NavbarComponent = () => {
 
         {NAVBAR_ITEMS.map((item, index) => (
           <NavbarItem key={index}>
-            <Link color="foreground" href={item.PATH}>
+            <Link size="sm" color="foreground" href={item.PATH}>
               {item.NAME}
             </Link>
           </NavbarItem>
