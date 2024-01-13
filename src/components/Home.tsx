@@ -7,14 +7,15 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 const iconSize = "25px";
-const iconStyle = "transition-all hover:scale-110";
+const iconStyle =
+  "transition-all hover:scale-110 hover:text-primary active:scale-110 active:text-primary";
 
 export const Home = () => {
   return (
     <Container id={ROUTES.HOME}>
       <div className="sm:w-[400px] w-full flex flex-col gap-3">
         <h1 className="text-5xl font-bold">Ignacio Biran</h1>
-        <h2 className="text-xl font-semibold font-mono text-[#0070F0]">
+        <h2 className="text-xl font-semibold font-mono text-primary">
           Frontend Developer
         </h2>
         <p className="text-gray-400 text-wrap">
