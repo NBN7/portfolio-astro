@@ -11,7 +11,7 @@ import {
   Link,
 } from "@nextui-org/react";
 
-import { NAVBAR_ITEMS } from "../constants/navbarItems";
+import { NAVBAR_ITEMS } from "../../constants/navbarItems";
 
 export const NavbarComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
