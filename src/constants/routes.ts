@@ -1,22 +1,22 @@
 export const ROUTES = {
   HOME: {
     NAME: "Home",
-    PATH: "#home",
+    PATH: "home",
   },
   EXPERIENCE: {
     NAME: "Experience",
-    PATH: "#experience",
+    PATH: "experience",
   },
   SKILLS: {
     NAME: "Skills",
-    PATH: "#skills",
+    PATH: "skills",
   },
   PROJECTS: {
     NAME: "Projects",
-    PATH: "#projects",
+    PATH: "projects",
   },
   CONTACT: {
     NAME: "Contact",
-    PATH: "#contact",
+    PATH: "contact",
   },
 };

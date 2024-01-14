@@ -16,6 +16,10 @@ import { NAVBAR_ITEMS } from "../../constants/navbarItems";
 export const NavbarComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleOnClick = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <Navbar
       className="fixed"
@@ -40,25 +44,26 @@ export const NavbarComponent = () => {
           <p className="font-bold">IB</p>
         </NavbarBrand>
 
-        {NAVBAR_ITEMS.map((item, index) => (
+        {NAVBAR_ITEMS.map(({ NAME, PATH }, index) => (
           <NavbarItem key={index}>
-            <Link size="sm" color="foreground" href={item.PATH}>
-              {item.NAME}
+            <Link size="sm" color="foreground" href={`#${PATH}`}>
+              {NAME}
             </Link>
           </NavbarItem>
         ))}
       </NavbarContent>
 
       <NavbarMenu>
-        {NAVBAR_ITEMS.map((item, index) => (
+        {NAVBAR_ITEMS.map(({ NAME, PATH }, index) => (
           <NavbarMenuItem key={index}>
             <Link
+              onClick={handleOnClick}
               color="foreground"
               className="w-full"
-              href={item.PATH}
+              href={`#${PATH}`}
               size="lg"
             >
-              {item.NAME}
+              {NAME}
             </Link>
           </NavbarMenuItem>
         ))}
