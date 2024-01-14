@@ -1,0 +1,18 @@
+---
+import Container from "./Container.astro";
+import ExperienceItem from "./ExperienceItem.astro";
+
+import { ROUTES } from "../../constants/routes";
+import { EXPERIENCE } from "../../constants/experience";
+---
+
+<Container id={ROUTES.EXPERIENCE.PATH}>
+  <h2 class="text-xl font-semibold">Experience</h2>
+  <ol class="relative border-s border-gray-200">
+    {
+      EXPERIENCE.map(({ TIME, TITLE, DESCRIPTION }) => (
+        <ExperienceItem time={TIME} title={TITLE} description={DESCRIPTION} />
+      ))
+    }
+  </ol>
+</Container>
