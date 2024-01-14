@@ -7,16 +7,8 @@ export const ROUTES = {
     NAME: "Experience",
     PATH: "experience",
   },
-  SKILLS: {
-    NAME: "Skills",
-    PATH: "skills",
-  },
   PROJECTS: {
     NAME: "Projects",
     PATH: "projects",
-  },
-  CONTACT: {
-    NAME: "Contact",
-    PATH: "contact",
   },
 };

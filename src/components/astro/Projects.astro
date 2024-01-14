@@ -2,6 +2,8 @@
 import Container from "./Container.astro";
 import ProjectItem from "./ProjectItem.astro";
 
+import { Divider } from "@nextui-org/react";
+
 import { ROUTES } from "../../constants/routes";
 import { PROJECTS } from "../../constants/projects";
 
@@ -13,12 +15,28 @@ const logoSize = "27px";
 ---
 
 <Container id={ROUTES.PROJECTS.PATH}>
-  <h2 class="text-xl font-semibold mb-4">Projects</h2>
+  <h2 class="text-xl font-semibold mb-4">{ROUTES.PROJECTS.NAME}</h2>
 
   <ProjectItem
     title={PROJECTS.PASSWORD_GENERATOR.TITLE}
     description={PROJECTS.PASSWORD_GENERATOR.DESCRIPTION}
     image={PROJECTS.PASSWORD_GENERATOR.IMAGE}
+    deploy={PROJECTS.PASSWORD_GENERATOR.DEPLOY}
+    github={PROJECTS.PASSWORD_GENERATOR.GITHUB}
+  >
+    <BiLogoTypescript size={logoSize} />
+    <FaReact size={logoSize} />
+    <BiLogoTailwindCss size={logoSize} />
+  </ProjectItem>
+
+  <Divider className="my-4" />
+
+  <ProjectItem
+    title={PROJECTS.CHESS_TIMER.TITLE}
+    description={PROJECTS.CHESS_TIMER.DESCRIPTION}
+    image={PROJECTS.CHESS_TIMER.IMAGE}
+    deploy={PROJECTS.CHESS_TIMER.DEPLOY}
+    github={PROJECTS.CHESS_TIMER.GITHUB}
   >
     <BiLogoTypescript size={logoSize} />
     <FaReact size={logoSize} />
