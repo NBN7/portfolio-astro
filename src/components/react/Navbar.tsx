@@ -12,6 +12,7 @@ import {
 } from "@nextui-org/react";
 
 import { NAVBAR_ITEMS } from "../../constants/navbarItems";
+import { ROUTES } from "../../constants/routes";
 
 export const NavbarComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,13 +36,21 @@ export const NavbarComponent = () => {
 
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand>
-          <p className="sm:hidden font-bold">IB</p>
+          <Link
+            className="sm:hidden"
+            color="foreground"
+            href={`#${ROUTES.HOME.PATH}`}
+          >
+            <p className="sm:hidden font-bold">IB</p>
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="start">
-        <NavbarBrand>
-          <p className="font-bold">IB</p>
+        <NavbarBrand className="cursor-pointer">
+          <Link color="foreground" href={`#${ROUTES.HOME.PATH}`}>
+            <p className="font-bold">IB</p>
+          </Link>
         </NavbarBrand>
 
         {NAVBAR_ITEMS.map(({ NAME, PATH }, index) => (
