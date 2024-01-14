@@ -2,19 +2,19 @@ import { ROUTES } from "./routes";
 
 export const NAVBAR_ITEMS = [
   {
-    NAME: "Home",
-    PATH: ROUTES.HOME,
+    NAME: ROUTES.HOME.NAME,
+    PATH: ROUTES.HOME.PATH,
   },
   {
-    NAME: "Skills",
-    PATH: ROUTES.SKILLS,
+    NAME: ROUTES.EXPERIENCE.NAME,
+    PATH: ROUTES.SKILLS.PATH,
   },
   {
-    NAME: "Projects",
-    PATH: ROUTES.PROJECTS,
+    NAME: ROUTES.SKILLS.NAME,
+    PATH: ROUTES.PROJECTS.PATH,
   },
   {
-    NAME: "Contact",
-    PATH: ROUTES.CONTACT,
+    NAME: ROUTES.PROJECTS.NAME,
+    PATH: ROUTES.CONTACT.PATH,
   },
 ];
