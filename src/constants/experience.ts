@@ -3,7 +3,7 @@ export const EXPERIENCE = [
     TIME: "Actually",
     TITLE: "Fullstack Developer - Sturges Labs LLC",
     DESCRIPTION:
-      "Fullstack developer for Sturges Labs LLC. For the Frontend, I used TypeScript, NextJS, and MUI. For the Backend, I employed TypeScript, tRPC, Clerk, MySQL and Prisma.",
+      "Fullstack developer for Sturges Labs LLC. For the Frontend, I use TypeScript, NextJS, and MUI. For the Backend, I employ TypeScript, tRPC, Clerk, MySQL and Prisma.",
   },
   {
     TIME: "January 2024",
