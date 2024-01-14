@@ -9,6 +9,6 @@ export const EXPERIENCE = [
     TIME: "January 2024",
     TITLE: "Frontend Developer - Sturges Labs LLC",
     DESCRIPTION:
-      "Frontend developer for Sturges Labs LLC. I used TypeScript, NextJS, and MUI.",
+      "Frontend developer for Sturges Labs LLC. I used TypeScript, NextJS and MUI.",
   },
 ];
