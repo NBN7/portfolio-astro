@@ -2,6 +2,7 @@
 import "@fontsource-variable/onest";
 
 import { NavbarComponent } from "../components/react/Navbar";
+import Footer from "../components/astro/Footer.astro";
 ---
 
 <!doctype html>
@@ -23,6 +24,8 @@ import { NavbarComponent } from "../components/react/Navbar";
     <main class="p-4">
       <slot />
     </main>
+
+    <Footer />
 
     <style is:global>
       :root {
