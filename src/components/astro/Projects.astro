@@ -1,45 +1,25 @@
 ---
 import Container from "./Container.astro";
-import ProjectItem from "./ProjectItem.astro";
-
-import { Divider } from "@nextui-org/react";
+import { Project } from "../react/Project";
 
 import { ROUTES } from "../../constants/routes";
 import { PROJECTS } from "../../constants/projects";
-
-import { BiLogoTypescript } from "react-icons/bi";
-import { FaReact } from "react-icons/fa";
-import { BiLogoTailwindCss } from "react-icons/bi";
-
-const logoSize = "27px";
 ---
 
 <Container id={ROUTES.PROJECTS.PATH}>
-  <h2 class="text-xl font-semibold mb-4">{ROUTES.PROJECTS.NAME}</h2>
-
-  <ProjectItem
-    title={PROJECTS.PASSWORD_GENERATOR.TITLE}
-    description={PROJECTS.PASSWORD_GENERATOR.DESCRIPTION}
-    image={PROJECTS.PASSWORD_GENERATOR.IMAGE}
-    deploy={PROJECTS.PASSWORD_GENERATOR.DEPLOY}
-    github={PROJECTS.PASSWORD_GENERATOR.GITHUB}
-  >
-    <BiLogoTypescript size={logoSize} />
-    <FaReact size={logoSize} />
-    <BiLogoTailwindCss size={logoSize} />
-  </ProjectItem>
-
-  <Divider className="my-4" />
-
-  <ProjectItem
-    title={PROJECTS.CHESS_TIMER.TITLE}
-    description={PROJECTS.CHESS_TIMER.DESCRIPTION}
-    image={PROJECTS.CHESS_TIMER.IMAGE}
-    deploy={PROJECTS.CHESS_TIMER.DEPLOY}
-    github={PROJECTS.CHESS_TIMER.GITHUB}
-  >
-    <BiLogoTypescript size={logoSize} />
-    <FaReact size={logoSize} />
-    <BiLogoTailwindCss size={logoSize} />
-  </ProjectItem>
+  <h2 class="text-xl font-semibold mb-2">{ROUTES.PROJECTS.NAME}</h2>
+  <div class="flex flex-col gap-6">
+    {
+      PROJECTS.map(({ DESCRIPTION, TITLE, IMAGE, GITHUB, DEPLOY }) => (
+        <Project
+          description={DESCRIPTION}
+          title={TITLE}
+          image={IMAGE}
+          github={GITHUB}
+          deploy={DEPLOY}
+          client:load
+        />
+      ))
+    }
+  </div>
 </Container>
