@@ -1,3 +1,3 @@
 # Portfolio Astro 🚀
 
-TypeScript, Tailwind CSS, NextUI.
+Astro, TypeScript, Tailwind CSS, NextUI.
