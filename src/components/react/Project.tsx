@@ -55,7 +55,11 @@ export const Project = ({
         </p>
         <h4 className="text-white font-medium text-large">{title}</h4>
       </CardHeader>
-      <img className="absolute z-0 w-full h-full object-cover" src={image} />
+      <img
+        className="absolute z-0 w-full h-full object-cover"
+        src={image}
+        alt={`${title} project`}
+      />
       <CardFooter className="flex absolute bg-black/40 bottom-0 z-10 border-t-1 border-white/15">
         <Link href={github} target="_blank">
           <Button className="bg-transparent" isIconOnly radius="full">
