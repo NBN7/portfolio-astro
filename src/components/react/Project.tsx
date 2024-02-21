@@ -35,7 +35,12 @@ export const Project = ({
       <div className="absolute z-50 top-0 right-0 flex items-center justify-center w-12 h-12 ">
         <Popover placement="top" backdrop="opaque">
           <PopoverTrigger>
-            <Button className="bg-transparent" isIconOnly radius="full">
+            <Button
+              className="bg-transparent"
+              isIconOnly
+              radius="full"
+              aria-label="Information"
+            >
               <IoIosInformationCircleOutline size={iconSize} />
             </Button>
           </PopoverTrigger>
@@ -50,9 +55,9 @@ export const Project = ({
         </Popover>
       </div>
       <CardHeader className="absoulte z-10 top-1 flex-col !items-start">
-        <p className="text-tiny text-white/60 uppercase font-bold">
+        <h3 className="text-tiny text-white/60 uppercase font-bold">
           {description}
-        </p>
+        </h3>
         <h4 className="text-white font-medium text-large">{title}</h4>
       </CardHeader>
       <img
@@ -62,13 +67,23 @@ export const Project = ({
       />
       <CardFooter className="flex absolute bg-black/40 bottom-0 z-10 border-t-1 border-white/15">
         <Link href={github} target="_blank">
-          <Button className="bg-transparent" isIconOnly radius="full">
+          <Button
+            className="bg-transparent"
+            isIconOnly
+            radius="full"
+            aria-label="GitHub"
+          >
             <FaGithub size={iconSize} />
           </Button>
         </Link>
 
         <Link href={deploy} target="_blank">
-          <Button className="bg-transparent" isIconOnly radius="full">
+          <Button
+            className="bg-transparent"
+            isIconOnly
+            radius="full"
+            aria-label="Deploy"
+          >
             <FaBolt size={iconSize} />
           </Button>
         </Link>

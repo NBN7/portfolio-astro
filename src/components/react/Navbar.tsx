@@ -35,6 +35,7 @@ export const NavbarComponent = () => {
             className="sm:hidden"
             color="foreground"
             href={`#${ROUTES.HOME.PATH}`}
+            aria-label="Home"
           >
             <p className="sm:hidden font-bold">IB</p>
           </Link>
@@ -43,14 +44,23 @@ export const NavbarComponent = () => {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="start">
         <NavbarBrand className="cursor-pointer">
-          <Link color="foreground" href={`#${ROUTES.HOME.PATH}`}>
+          <Link
+            color="foreground"
+            href={`#${ROUTES.HOME.PATH}`}
+            aria-label="Home"
+          >
             <p className="font-bold">IB</p>
           </Link>
         </NavbarBrand>
 
         {NAVBAR_ITEMS.map(({ NAME, PATH }, index) => (
           <NavbarItem key={index}>
-            <Link size="sm" color="foreground" href={`#${PATH}`}>
+            <Link
+              size="sm"
+              color="foreground"
+              href={`#${PATH}`}
+              aria-label={NAME}
+            >
               {NAME}
             </Link>
           </NavbarItem>
@@ -66,6 +76,7 @@ export const NavbarComponent = () => {
               className="w-full"
               href={`#${PATH}`}
               size="lg"
+              aria-label={NAME}
             >
               {NAME}
             </Link>
