@@ -16,6 +16,7 @@ import { IoIosInformationCircleOutline } from "react-icons/io";
 interface ProjectProps {
   description: string;
   title: string;
+  technologies: string;
   image: string;
   github: string;
   deploy: string;
@@ -24,6 +25,7 @@ interface ProjectProps {
 export const Project = ({
   description,
   title,
+  technologies,
   image,
   github,
   deploy,
@@ -47,9 +49,7 @@ export const Project = ({
           <PopoverContent>
             <div className="px-1 py-2">
               <h4 className="text-small font-bold">Technologies</h4>
-              <p className="text-tiny">
-                React.js, TypeScript, Tailwind CSS, Vite.js
-              </p>
+              <p className="text-tiny">{technologies}</p>
             </div>
           </PopoverContent>
         </Popover>

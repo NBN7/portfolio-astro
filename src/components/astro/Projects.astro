@@ -10,16 +10,19 @@ import { PROJECTS } from "../../constants/projects";
   <h2 class="text-xl font-semibold mb-2">{ROUTES.PROJECTS.NAME}</h2>
   <div class="flex flex-col gap-6">
     {
-      PROJECTS.map(({ DESCRIPTION, TITLE, IMAGE, GITHUB, DEPLOY }) => (
-        <Project
-          description={DESCRIPTION}
-          title={TITLE}
-          image={IMAGE}
-          github={GITHUB}
-          deploy={DEPLOY}
-          client:load
-        />
-      ))
+      PROJECTS.map(
+        ({ DESCRIPTION, TITLE, TECHNOLOGIES, IMAGE, GITHUB, DEPLOY }) => (
+          <Project
+            description={DESCRIPTION}
+            title={TITLE}
+            technologies={TECHNOLOGIES}
+            image={IMAGE}
+            github={GITHUB}
+            deploy={DEPLOY}
+            client:load
+          />
+        )
+      )
     }
   </div>
 </Container>
