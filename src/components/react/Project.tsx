@@ -34,11 +34,11 @@ export const Project = ({
 
   return (
     <Card className="col-span-12 sm:col-span-4 h-[300px]">
-      <div className="absolute z-50 top-0 right-0 flex items-center justify-center w-12 h-12 ">
+      <div className="absolute top-0 right-0 flex items-center justify-center w-12 h-12">
         <Popover placement="top" backdrop="opaque">
           <PopoverTrigger>
             <Button
-              className="bg-transparent"
+              className="bg-transparent z-20"
               isIconOnly
               radius="full"
               aria-label="Information"

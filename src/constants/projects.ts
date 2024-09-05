@@ -19,9 +19,18 @@ export const PROJECTS = [
     TITLE: "Short URL",
     DESCRIPTION: "Make it easy",
     TECHNOLOGIES:
-      "React.js, Next.js, React Query, Tailwind CSS, Next UI, Prisma, PostgreSQL",
+      "Next.js, TypeScript, React Query, Tailwind CSS, Next UI, Prisma, PostgreSQL",
     IMAGE: "/short-url.webp",
     DEPLOY: "https://short-url-z.vercel.app/",
     GITHUB: "https://github.com/NBN7/short-url",
+  },
+  {
+    TITLE: "Savings App",
+    DESCRIPTION: "Save your money",
+    TECHNOLOGIES:
+      "Next.js, TypeScript, React Query, Tailwind CSS, shadcn, Prisma, PostgreSQL",
+    IMAGE: "/savings-app.webp",
+    DEPLOY: "https://savingsapp.vercel.app/",
+    GITHUB: "https://github.com/NBN7/project",
   },
 ];
