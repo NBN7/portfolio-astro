@@ -15,15 +15,15 @@ export const PROJECTS = [
     DEPLOY: "https://labo4-chesstimer.netlify.app/",
     GITHUB: "https://github.com/NBN7/chess-timer",
   },
-  {
-    TITLE: "Short URL",
-    DESCRIPTION: "Make it easy",
-    TECHNOLOGIES:
-      "Next.js, TypeScript, React Query, Tailwind CSS, Next UI, Prisma, PostgreSQL",
-    IMAGE: "/short-url.webp",
-    DEPLOY: "https://short-url-z.vercel.app/",
-    GITHUB: "https://github.com/NBN7/short-url",
-  },
+  // {
+  //   TITLE: "Short URL",
+  //   DESCRIPTION: "Make it easy",
+  //   TECHNOLOGIES:
+  //     "Next.js, TypeScript, React Query, Tailwind CSS, Next UI, Prisma, PostgreSQL",
+  //   IMAGE: "/short-url.webp",
+  //   DEPLOY: "https://short-url-z.vercel.app/",
+  //   GITHUB: "https://github.com/NBN7/short-url",
+  // },
   {
     TITLE: "Savings App",
     DESCRIPTION: "Save your money",
